@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NBA Guide: Learn about NBA teams, players, highlights, and more!">
+    <meta name="keywords" content="NBA, basketball, NBA highlights, LeBron James, Utah Jazz, basketball stats">
+    <title>NBA Guide - Learn About Teams, Players, and Stats</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../Images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Navbar (Navigation) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">NBA Guide</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Frontpage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nbahighlights.html">NBA Highlights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html">About Me</a>
+                    </li>
+                    <!-- Link to NBA Team Guessing Game -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="gamepage.html">NBA Team Guessing Game</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mt-5">
+        <!-- Header Section -->
+        <header class="text-center">
+            <h1>NBA Guide</h1>
+            <p class="lead">Use this webpage to learn more about the NBA, talented teams, and some of the best athletes in the world!</p>
+        </header>
+
+        <!-- About the NBA -->
+        <section id="about" class="mt-5">
+            <h2>About the NBA</h2>
+            <p>The National Basketball Association (NBA) is the premier professional basketball league. Only the best basketball players in the world play in this league. Every game is filled with slam dunks, crazy three-pointers, and nail-biting enders! It is the best game in the world.</p>
+        </section>
+
+        <!-- Favorite Teams and Players -->
+        <section id="favorites" class="mt-5">
+            <h2>My Favorite Teams and Players</h2>
+            <div class="row">
+                <!-- Favorite Team Section -->
+                <div class="col-md-6">
+                    <h3>Favorite Team</h3>
+                    <p><strong>Utah Jazz</strong> - One of the most iconic franchises in NBA history! The Utah Jazz have had many legends come through, including Stockton and Malone!</p>
+                    <img src="../Images/UtahJazzlogo.jpeg" class="img-fluid" alt="Utah Jazz team logo" />
+                </div>
+
+                <!-- Favorite Player Section -->
+                <div class="col-md-6">
+                    <h3>Favorite Player</h3>
+                    <p><strong>LeBron James</strong> - My favorite player is LeBron James. He has played in the NBA since I was a baby. He is a four-time champion, all-time scoring leader in the NBA, and continues to amaze me through his longevity.</p>
+                    <img src="../Images/LBJ.jpeg" class="img-fluid" alt="LeBron James playing basketball" />
+                </div>
+            </div>
+        </section>
+
+        <!-- NBA Stats (New Tableau Map) -->
+        <section id="stats" class="mt-5">
+            <h2>Find The Team Closest To You!</h2>
+            <!-- Tableau Embed Code (Centered) -->
+            <div class="d-flex justify-content-center">
+                <div class='tableauPlaceholder' id='viz1734476658364' style='position: relative'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt='NBA Team Map' src='https://public.tableau.com/static/images/4Q/4QCXXG3CC/1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='path' value='shared/4QCXXG3CC' />
+                        <param name='toolbar' value='no' />  <!-- Hide toolbar -->
+                        <param name='static_image' value='https://public.tableau.com/static/images/4Q/4QCXXG3CC/1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='no' />  <!-- Hide overlay -->
+                        <param name='display_count' value='no' />  <!-- Hide view count -->
+                        <param name='language' value='en-US' />
+                    </object>
+                </div>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1734476658364');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width='100%';  // Ensure full width of the parent container
+                vizElement.style.height='600px'; // Set a reasonable height
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+        </section>
+
+    </main> <!-- End container -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; NBA Guide | Joey Taylor</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
